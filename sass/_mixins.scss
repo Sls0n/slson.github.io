@@ -1,0 +1,27 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content }; //600px
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content }; //900px
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) { @content }; //1200px
+    }
+    @if $breakpoint == skill-end {
+        @media (max-width: 84.37em) { @content };
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content }; //1800px
+    }
+
+}
+
+// Media Query Manager
+/*
+0 - 600px :    Phone
+600 - 900px :    Tablet Potrait
+900 - 1200px :    Tablet Landscape
+1200 - 1800px :   [This is where out normal effect will apply]
+1800px+       :    Big Desktop
+*/

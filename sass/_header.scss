@@ -1,0 +1,101 @@
+.header {
+    grid-column: full-start / full-end;
+    grid-row: 1 / 2;
+    padding: 2.1rem 3.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &__heading {
+        grid-row: 1 / 2;
+        justify-self: flex-start;
+        color: #f2f2f2;
+        font-size: 2.64rem;
+        font-weight: 400;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    &__nav {
+        grid-row: 1 / 2;
+        justify-self: center;
+        align-self: center;
+        z-index: 10;
+
+        &-link {
+            color: #f2f2f2;
+            font-size: 1.65rem;
+            text-decoration: none;
+            z-index: 10;
+
+            &:not(:last-child) {
+                margin-right: 2.97rem;
+            }
+
+            &:not(:first-child) {
+                color: #9b9ca3c0;
+            }
+        }
+
+        &-icon {
+            width: 2.1rem;
+            height: 2.1rem;
+            fill: #c9c9c9;
+            transform: translateY(3px);
+            z-index: 10;
+        }
+    }
+
+    &__icon {
+        z-index: 10;
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        justify-self: center;
+        align-self: center;
+        cursor: pointer;
+
+        &-lightmd {
+            width: 2.1rem;
+            height: 2.1rem;
+            fill: #c9c9c9;
+            transition: all .3s;
+
+            &:hover {
+                fill: #fff;
+            }
+        }
+
+        &-menu {
+            z-index: 10;
+            width: 2.1rem;
+            height: 2.1rem;
+            fill: #c9c9c9;
+            color: #c9c9c9;
+            transition: all .3s;
+            margin-left: 2.97rem;
+
+            &:hover {
+                fill: #fff;
+                color: #fff;
+            }
+        }
+    }
+
+    &__btn {
+        z-index: 10;
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        justify-self: flex-end;
+        font-size: 2.64rem;
+
+        
+        &:hover {
+            color: #333;
+            background-color: #f2f2f2;
+            border: 1px solid rgba(#f2f2f2, 1);
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+}

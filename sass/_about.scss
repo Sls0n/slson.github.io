@@ -1,0 +1,78 @@
+.about {
+    grid-column: full-start / full-end;
+    grid-row: 4 / 5;
+
+    max-width: 100%;
+    font-size: 3rem;
+    color: #f2f2f2;
+    background-image: linear-gradient(rgba(#1b1f26, .7), rgba(#1e1f24, .7));
+    z-index: 25;
+    min-height: 50rem;
+    padding: 3rem 6rem;
+	box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.3);
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+
+
+    &__paragraph {
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__btn {
+        font-size: 1.4rem !important;
+        display: inline-block;
+        font-weight: 400;
+        padding: .6rem 1.2rem !important;
+
+        &:hover {
+            background-color: rgba(#f2f2f2, .9);
+            color: #333;
+            border: 1px solid rgba(#f2f2f2, .9);
+        }
+
+
+        &-2 {
+            background-color: rgba(#f2f2f2, .9) !important;
+            color: #000 !important;
+            border: 1px solid rgba(#f2f2f2, .9) !important;
+        }
+    }
+
+    &__picturebox { 
+        background: linear-gradient(rgba(#1b1f26, .6), rgba(#1b1f26, .6)), url(../images/hacker.jpg);
+        margin-right: 5rem;
+        background-size: cover;
+        height: 25rem;
+        width: 25rem;
+        align-self: center;
+
+        
+    }
+
+    &__textbox {
+        
+        .paragraph {
+            text-align: start;
+            max-width: 80rem;
+            font-size: 1.7rem;
+        }
+    }
+
+}
+
+figcaption {
+    position: relative;
+    font-size: 1.7rem;
+    text-align: start;
+    color: #f2f2f2;
+    bottom: -100%;
+}
+
