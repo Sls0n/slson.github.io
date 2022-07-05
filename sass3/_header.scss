@@ -1,11 +1,26 @@
 .header {
+
     grid-column: full-start / full-end;
     grid-row: 1 / 2;
     padding: 2.1rem 3.1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
+    @include respond(tab-port) {
+        font-size: calc(2.64rem - 0.30rem)
+    }
+
+
     &__heading {
+
+        @include respond(tab-land) {
+            font-size: calc(2.64rem - 0.20rem);
+        }
+
+        @include respond(tab-port) {
+            font-size: calc(2.64rem - 0.30rem);
+        }
+
         grid-row: 1 / 2;
         justify-self: flex-start;
         color: #f2f2f2;
@@ -13,6 +28,8 @@
         font-weight: 400;
         cursor: pointer;
         z-index: 10;
+
+        
     }
 
     &__nav {
@@ -22,6 +39,16 @@
         z-index: 10;
 
         &-link {
+
+
+            @include respond(tab-land) {
+                font-size: calc(1.65rem - 0.20rem);
+            }
+
+            @include respond(tab-port) {
+                font-size: calc(1.65rem - 0.30rem);
+            }
+
             color: #f2f2f2;
             font-size: 1.65rem;
             text-decoration: none;
@@ -37,6 +64,17 @@
         }
 
         &-icon {
+
+            @include respond(tab-land) {
+                width: 1.9rem;
+                height: 1.9rem;
+            }
+
+            @include respond(tab-port) {
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+
             width: 2.1rem;
             height: 2.1rem;
             fill: #c9c9c9;
@@ -46,6 +84,8 @@
     }
 
     &__icon {
+
+        
         z-index: 10;
         grid-row: 1 / 2;
         grid-column: 3 / 4;
@@ -54,6 +94,22 @@
         cursor: pointer;
 
         &-lightmd {
+
+            @include respond(tab-land) {
+                width: 1.9rem;
+                height: 1.9rem;
+                transform: translateY(2.5px) translateX(-5.2rem);
+            }
+
+            @include respond(tab-port) {
+                width: 1.8rem;
+                height: 1.8rem;
+                transform: translateY(2.4px) translateX(-5.1rem);
+                display: none;
+                visibility: hidden;
+            }
+
+            transform: translateY(3.5px) translateX(-5rem);
             width: 2.1rem;
             height: 2.1rem;
             fill: #c9c9c9;
@@ -65,6 +121,21 @@
         }
 
         &-menu {
+
+            @include respond(tab-land) {
+                width: 1.9rem;
+                height: 1.9rem;
+                transform: translateY(2.5px) translateX(-5.2rem);
+            }
+
+            @include respond(tab-port) {
+                width: 1.8rem;
+                height: 1.8rem;
+                transform: translateY(2.4px) translateX(-5.1rem);
+                display: none;
+                visibility: hidden;
+            }
+            transform: translateY(3.5px) translateX(-5rem);
             z-index: 10;
             width: 2.1rem;
             height: 2.1rem;
@@ -81,11 +152,15 @@
     }
 
     &__btn {
+
+        @include respond(tab-port) {
+            display: none;
+            visibility: hidden;
+        }
         z-index: 10;
         grid-row: 1 / 2;
         grid-column: 3 / 4;
         justify-self: flex-end;
-        font-size: 2.64rem;
 
         
         &:hover {

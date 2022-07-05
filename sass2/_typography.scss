@@ -4,18 +4,35 @@
     font-weight: 500;
     text-align: center;
     letter-spacing: -1.5px;
+
+    @include respond(tab-land) {
+        font-size: 5.5rem;
+        letter-spacing: -.1px;
+    }
+
+    @include respond(tab-port) {
+        font-size: 5.4rem;
+        letter-spacing: -.5px;
+    }
 }
 
 .heading-2 {
     font-size: 3rem;
     color: #f2f2f2;
     font-weight: 500;
+
+    @include respond(tab-land) {
+        font-size: 2.5rem;
+    }
+
+    @include respond(tab-port) {
+        font-size: 2.4rem;
+    }
 }
 
 
 .heading-4 {
     font-weight: 500;
-    font-size: 2rem;
     color: #545962;
 }
 
@@ -23,6 +40,14 @@
     font-size: 1.65rem;
     color: #8c949b;
     text-align: center;
+
+    @include respond(tab-land) {
+        font-size: 1.45rem;
+    }
+
+    @include respond(tab-port) {
+        font-size: 1.35rem;
+    }
 }
 
 .btn {
@@ -37,4 +62,12 @@
     transition: all .3s;
     backface-visibility: hidden;
     text-decoration: none;
+
+    @include respond(tab-land) {
+        font-size: 1.35rem !important;
+    }
+
+    @include respond(tab-port) {
+        font-size: 1.25rem !important;
+    }
 }

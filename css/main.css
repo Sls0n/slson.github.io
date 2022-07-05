@@ -1,3 +1,10 @@
+/*
+0 - 600px :    Phone
+600 - 900px :    Tablet Potrait
+900 - 1200px :    Tablet Landscape
+1200 - 1800px :   [This is where out normal effect will apply]
+1800px+       :    Big Desktop
+*/
 .about {
   grid-column: full-start/full-end;
   grid-row: 4/5;
@@ -12,8 +19,23 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 75em) {
+  .about {
+    min-height: 40rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .about {
+    min-height: 30rem;
+  }
+}
 .about__paragraph {
   text-align: center;
+}
+@media (max-width: 56.25em) {
+  .about__paragraph {
+    font-size: 1rem !important;
+  }
 }
 .about__content {
   display: flex;
@@ -25,6 +47,16 @@
   display: inline-block;
   font-weight: 400;
   padding: 0.6rem 1.2rem !important;
+}
+@media (max-width: 75em) {
+  .about__btn {
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 56.25em) {
+  .about__btn {
+    font-size: 1rem !important;
+  }
 }
 .about__btn:hover {
   background-color: rgba(242, 242, 242, 0.9);
@@ -40,18 +72,47 @@
   color: #000 !important;
   border: 1px solid rgba(242, 242, 242, 0.9) !important;
 }
+@media (max-width: 75em) {
+  .about__btn-2 {
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 56.25em) {
+  .about__btn-2 {
+    font-size: 1rem !important;
+  }
+}
 .about__picturebox {
   background: linear-gradient(rgba(27, 31, 38, 0.6), rgba(27, 31, 38, 0.6)), url(../images/hacker.jpg);
+  background-position: center;
   margin-right: 5rem;
   background-size: cover;
   height: 25rem;
   width: 25rem;
   align-self: center;
 }
+@media (max-width: 75em) {
+  .about__picturebox {
+    height: 23rem;
+    width: 23rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .about__picturebox {
+    height: 15rem;
+    width: 23rem;
+    margin-right: 4rem;
+  }
+}
 .about__textbox .paragraph {
   text-align: start;
   max-width: 80rem;
   font-size: 1.7rem;
+}
+@media (max-width: 75em) {
+  .about__textbox .paragraph {
+    font-size: 1.5rem !important;
+  }
 }
 
 figcaption {
@@ -60,6 +121,16 @@ figcaption {
   text-align: start;
   color: #f2f2f2;
   bottom: -100%;
+}
+@media (max-width: 75em) {
+  figcaption {
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 56.25em) {
+  figcaption {
+    font-size: 1.4rem !important;
+  }
 }
 
 * {
@@ -133,6 +204,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+@media (max-width: 56.25em) {
+  .header {
+    font-size: 2.34rem;
+  }
+}
 .header__heading {
   grid-row: 1/2;
   justify-self: flex-start;
@@ -141,6 +217,16 @@ body {
   font-weight: 400;
   cursor: pointer;
   z-index: 10;
+}
+@media (max-width: 75em) {
+  .header__heading {
+    font-size: 2.44rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .header__heading {
+    font-size: 2.34rem;
+  }
 }
 .header__nav {
   grid-row: 1/2;
@@ -153,6 +239,16 @@ body {
   font-size: 1.65rem;
   text-decoration: none;
   z-index: 10;
+}
+@media (max-width: 75em) {
+  .header__nav-link {
+    font-size: 1.45rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .header__nav-link {
+    font-size: 1.35rem;
+  }
 }
 .header__nav-link:not(:last-child) {
   margin-right: 2.97rem;
@@ -167,6 +263,18 @@ body {
   transform: translateY(3px);
   z-index: 10;
 }
+@media (max-width: 75em) {
+  .header__nav-icon {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .header__nav-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
 .header__icon {
   z-index: 10;
   grid-row: 1/2;
@@ -176,15 +284,33 @@ body {
   cursor: pointer;
 }
 .header__icon-lightmd {
+  transform: translateY(3.5px) translateX(-5rem);
   width: 2.1rem;
   height: 2.1rem;
   fill: #c9c9c9;
   transition: all 0.3s;
 }
+@media (max-width: 75em) {
+  .header__icon-lightmd {
+    width: 1.9rem;
+    height: 1.9rem;
+    transform: translateY(2.5px) translateX(-5.2rem);
+  }
+}
+@media (max-width: 56.25em) {
+  .header__icon-lightmd {
+    width: 1.8rem;
+    height: 1.8rem;
+    transform: translateY(2.4px) translateX(-5.1rem);
+    display: none;
+    visibility: hidden;
+  }
+}
 .header__icon-lightmd:hover {
   fill: #fff;
 }
 .header__icon-menu {
+  transform: translateY(3.5px) translateX(-5rem);
   z-index: 10;
   width: 2.1rem;
   height: 2.1rem;
@@ -192,6 +318,22 @@ body {
   color: #c9c9c9;
   transition: all 0.3s;
   margin-left: 2.97rem;
+}
+@media (max-width: 75em) {
+  .header__icon-menu {
+    width: 1.9rem;
+    height: 1.9rem;
+    transform: translateY(2.5px) translateX(-5.2rem);
+  }
+}
+@media (max-width: 56.25em) {
+  .header__icon-menu {
+    width: 1.8rem;
+    height: 1.8rem;
+    transform: translateY(2.4px) translateX(-5.1rem);
+    display: none;
+    visibility: hidden;
+  }
 }
 .header__icon-menu:hover {
   fill: #fff;
@@ -202,7 +344,12 @@ body {
   grid-row: 1/2;
   grid-column: 3/4;
   justify-self: flex-end;
-  font-size: 2.64rem;
+}
+@media (max-width: 56.25em) {
+  .header__btn {
+    display: none;
+    visibility: hidden;
+  }
 }
 .header__btn:hover {
   color: #333;
@@ -240,6 +387,16 @@ body {
   z-index: 10;
   text-decoration: none;
 }
+@media (max-width: 75em) {
+  .main__btn1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .main__btn1 {
+    font-size: 1.4rem;
+  }
+}
 .main__btn1:hover {
   background-color: #f2f2f2;
   color: #333;
@@ -261,6 +418,16 @@ body {
   cursor: pointer;
   z-index: 10;
 }
+@media (max-width: 56.25em) {
+  .main__btn2 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 75em) {
+  .main__btn2 {
+    font-size: 1.5rem;
+  }
+}
 .main__btn2:hover {
   background-color: transparent;
   color: #f2f2f2;
@@ -274,13 +441,70 @@ body {
   justify-content: center;
 }
 
-/*
-0 - 600px :    Phone
-600 - 900px :    Tablet Potrait
-900 - 1200px :    Tablet Landscape
-1200 - 1800px :   [This is where out normal effect will apply]
-1800px+       :    Big Desktop
-*/
+label {
+  font-size: 2.35rem;
+  color: #f2f2f2;
+  display: none;
+  grid-row: 1/2;
+  grid-column: 4/5;
+  transition: all 0.3s;
+}
+label:active {
+  transform: scale(1.5);
+}
+
+#toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  label {
+    display: block;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    display: none;
+  }
+
+  .header__nav-link {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    margin-right: 2.97rem;
+    line-height: 2;
+  }
+
+  .header__nav-icon {
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #toggle:checked + .header__nav {
+    transition: all 0.5s;
+    display: block;
+    z-index: 19;
+    background-image: linear-gradient(to right bottom, rgba(27, 31, 38, 0.9), rgba(30, 31, 36, 0.9));
+    padding: 3rem 6rem;
+    box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.5);
+    border: 1px solid rgba(105, 108, 110, 0.6);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+  }
+}
 .skills {
   position: relative;
   grid-column: full-start/full-end;
@@ -291,6 +515,11 @@ body {
   gap: 2rem;
   z-index: 10;
   min-height: 40rem;
+}
+@media (max-width: 75em) {
+  .skills {
+    gap: 1.5rem;
+  }
 }
 .skills__heading {
   display: grid;
@@ -441,11 +670,33 @@ body {
   text-align: center;
   letter-spacing: -1.5px;
 }
+@media (max-width: 75em) {
+  .heading-1 {
+    font-size: 5.5rem;
+    letter-spacing: -0.1px;
+  }
+}
+@media (max-width: 56.25em) {
+  .heading-1 {
+    font-size: 5.2rem;
+    letter-spacing: -0.5px;
+  }
+}
 
 .heading-2 {
   font-size: 3rem;
   color: #f2f2f2;
   font-weight: 500;
+}
+@media (max-width: 75em) {
+  .heading-2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .heading-2 {
+    font-size: 2.3rem;
+  }
 }
 
 .heading-4 {
@@ -456,6 +707,16 @@ body {
   font-size: 1.65rem;
   color: #8c949b;
   text-align: center;
+}
+@media (max-width: 75em) {
+  .paragraph {
+    font-size: 1.45rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .paragraph {
+    font-size: 1.3rem !important;
+  }
 }
 
 .btn {
@@ -472,37 +733,87 @@ body {
           backface-visibility: hidden;
   text-decoration: none;
 }
+@media (max-width: 75em) {
+  .btn {
+    font-size: 1.35rem !important;
+  }
+}
+@media (max-width: 56.25em) {
+  .btn {
+    font-size: 1.25rem !important;
+  }
+}
 
 .mt-sm {
   margin-top: 2rem;
+}
+@media (max-width: 75em) {
+  .mt-sm {
+    margin-top: 1.8rem;
+  }
 }
 
 .mt-nm {
   margin-top: 4rem;
 }
+@media (max-width: 75em) {
+  .mt-nm {
+    margin-top: 3.6rem;
+  }
+}
 
 .mt-bg {
-  margin-top: 6rem;
+  margin-top: 8rem;
+}
+@media (max-width: 75em) {
+  .mt-bg {
+    margin-top: 4rem;
+  }
 }
 
 .mt-hg {
   margin-top: 12rem;
 }
+@media (max-width: 75em) {
+  .mt-hg {
+    margin-top: 8rem;
+  }
+}
 
 .mr-sm {
   margin-right: 2rem;
+}
+@media (max-width: 75em) {
+  .mr-sm {
+    margin-right: 1.8rem;
+  }
 }
 
 .mr-nm {
   margin-right: 4rem;
 }
+@media (max-width: 75em) {
+  .mr-nm {
+    margin-right: 3.6rem;
+  }
+}
 
 .mr-bg {
   margin-right: 6rem;
 }
+@media (max-width: 75em) {
+  .mr-bg {
+    margin-right: 5.2rem;
+  }
+}
 
 .mr-hg {
   margin-right: 12rem;
+}
+@media (max-width: 75em) {
+  .mr-hg {
+    margin-right: 8rem;
+  }
 }
 
 html {

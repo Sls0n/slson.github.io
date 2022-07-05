@@ -1,4 +1,13 @@
 .about {
+
+    @include respond(tab-land) {
+        min-height: 40rem;
+    }
+
+    @include respond(tab-port) {
+        min-height: 30rem;
+    }
+
     grid-column: full-start / full-end;
     grid-row: 4 / 5;
 
@@ -11,11 +20,15 @@
     padding: 3rem 6rem;
 	box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.3);
     display: flex;
-    // align-items: center;
     justify-content: center;
 
+    
 
     &__paragraph {
+
+        @include respond(tab-port) {
+            font-size: 1rem !important;
+        }
         text-align: center;
     }
 
@@ -27,6 +40,15 @@
     }
 
     &__btn {
+
+        @include respond(tab-land) {
+            font-size: 1.2rem !important;
+        }
+
+        @include respond(tab-port) {
+            font-size: 1rem !important;
+        }
+
         font-size: 1.4rem !important;
         display: inline-block;
         font-weight: 400;
@@ -40,6 +62,14 @@
 
 
         &-2 {
+
+            @include respond(tab-land) {
+                font-size: 1.2rem !important;
+            }
+
+            @include respond(tab-port) {
+                font-size: 1rem !important;
+            }
             font-size: 1.4rem !important;
             display: inline-block;
             font-weight: 400 !important;
@@ -51,7 +81,19 @@
     }
 
     &__picturebox { 
+
+        @include respond(tab-land) {
+            height: 23rem;
+            width: 23rem;
+        }
+
+        @include respond(tab-port) {
+            height: 15rem;
+            width: 23rem;
+            margin-right: 4rem;
+        }
         background: linear-gradient(rgba(#1b1f26, .6), rgba(#1b1f26, .6)), url(../images/hacker.jpg);
+        background-position: center;
         margin-right: 5rem;
         background-size: cover;
         height: 25rem;
@@ -64,6 +106,10 @@
     &__textbox {
         
         .paragraph {
+
+            @include respond(tab-land) {
+                font-size: 1.5rem !important;
+        }
             text-align: start;
             max-width: 80rem;
             font-size: 1.7rem;
@@ -73,6 +119,14 @@
 }
 
 figcaption {
+
+    @include respond(tab-land) {
+        font-size: 1.5rem !important;
+    }
+
+    @include respond(tab-port) {
+        font-size: 1.4rem !important;
+    }
     position: relative;
     font-size: 1.7rem;
     text-align: start;

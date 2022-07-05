@@ -1,13 +1,53 @@
-.mt-sm {margin-top: 2rem;}
-.mt-nm {margin-top: 4rem;}
-.mt-bg {margin-top: 6rem;}
-.mt-hg {margin-top: 12rem;}
+.mt-sm {
 
-.mr-sm {margin-right: 2rem;}
-.mr-nm {margin-right: 4rem;}
-.mr-bg {margin-right: 6rem;}
-.mr-hg {margin-right: 12rem;}
+    @include respond(tab-land) {
+        margin-top: 1.8rem;
+    }
+    margin-top: 2rem;
+}
+.mt-nm {
+    @include respond(tab-land) {
+        margin-top: 3.6rem;
+    }
+    margin-top: 4rem;
+}
+.mt-bg {
+    @include respond(tab-land) {
+        margin-top: 4rem;
+    }
+    margin-top: 8rem;
+}
+.mt-hg {
+    @include respond(tab-land) {
+        margin-top: 8rem;
+    }
+    margin-top: 12rem;
+}
 
+.mr-sm {
+    @include respond(tab-land) {
+        margin-right: 1.8rem;
+    }
+    margin-right: 2rem;
+}
+.mr-nm {
+    @include respond(tab-land) {
+        margin-right: 3.6rem;
+    }
+    margin-right: 4rem;
+}
+.mr-bg {
+    @include respond(tab-land) {
+        margin-right: 5.2rem;
+    }
+    margin-right: 6rem;
+}
+.mr-hg {
+    @include respond(tab-land) {
+        margin-right: 8rem;
+    }
+    margin-right: 12rem;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
