@@ -17,6 +17,15 @@
     grid-column: center-start / center-end;
     grid-row: 3 / 4;
 
+
+    &__btn {
+        transition: all .3s;
+        margin-bottom: 2rem;
+        &:hover {
+            background-color: #1b1f26;
+        }
+    }
+
     &__paragraph {
 
         @include respond (phone) {

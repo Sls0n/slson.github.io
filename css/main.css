@@ -364,7 +364,7 @@ body {
   width: 50%;
 }
 .skill__container .skill-box .skill-bar .skill-per.c {
-  width: 40%;
+  width: 100%;
 }
 .skill__container .skill-box .skill-bar .skill-per.music {
   width: 70%;
