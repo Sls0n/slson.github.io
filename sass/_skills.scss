@@ -35,11 +35,11 @@
 	}
 
 	.skill-1 {
-		grid-column: 1 / span 2;
+		grid-column: 1 / 2;
 
         @include respond(skill-end) {
-		grid-column: 1 / 2;
-	}
+			grid-column: 1 / -1;
+		}
 	}
 }
 
@@ -156,6 +156,11 @@
 }
 
 .skill-2 {
+
+	@include respond(skill-end) {
+			grid-column: 1 / -1;
+	}
+	
 	.list-box {
         
 		.skill__list {

@@ -1,0 +1,48 @@
+
+.heading {
+    grid-column: center-start / center-end;
+    grid-row: 2 / 3;
+    margin-top: 13.2rem;
+    border-bottom: 1px solid rgba(#696C6E, .4);
+    padding: 1rem;
+
+    .paragraph {
+        text-align: start;
+    }
+}
+
+.content {
+    z-index: 20;
+    margin-top: 8rem;
+    grid-column: center-start / center-end;
+    grid-row: 3 / 4;
+
+    &__paragraph {
+
+        @include respond (phone) {
+            padding: 1.3rem 2.6rem;
+        }
+
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.9rem;
+        font-weight: 400;
+        color: #ccc;
+        
+        letter-spacing: .05rem;
+        padding: 3rem 6rem;
+
+        background-image: linear-gradient(
+			to right bottom,
+			rgba(#1b1f26, 0.4),
+			rgba(#1e1f24, 0.4)
+		);
+		box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.5);
+		border: 1px solid rgba(#696c6e, 0.6);
+		border-radius: 0.5rem;
+		overflow: hidden;
+    }
+}
+
+.span-text {
+    font-family: 'Inconsolata', monospace;
+}
