@@ -28,6 +28,26 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media (max-width: 46.3125em) {
+  html {
+    font-size: 58%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 27.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 31.25em) {
+  html {
+    font-size: 45%;
+  }
+}
 
 body {
   font-family: "Rubik", sans-serif;
@@ -50,7 +70,7 @@ body {
 }
 
 .grid-container {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   display: grid;
   grid-template-rows: 8rem -webkit-min-content -webkit-min-content;
   grid-template-rows: 8rem min-content min-content;
@@ -261,25 +281,40 @@ label:active {
     margin-right: 2.97rem;
     line-height: 2;
   }
-
+}
+@media (max-width: 900px) and (max-width: 56.25em) {
+  .header__nav-link {
+    border-bottom: 1px solid #696c6e;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) and (max-width: 35em) {
+  .header__nav-link {
+    font-size: 2rem;
+    border-bottom: 1px solid #696c6e;
+    padding: 0.6rem 1.2rem;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
   .header__nav-icon {
     margin: 0;
     width: 3rem;
     height: 3rem;
   }
-
+}
+@media (max-width: 900px) {
   #toggle:checked + .header__nav {
     transition: all 0.5s;
     display: block;
     z-index: 19;
-    background-image: linear-gradient(to right bottom, rgba(27, 31, 38, 0.9), rgba(30, 31, 36, 0.9));
+    background-image: linear-gradient(to right bottom, #1b1f26, #1e1f24);
     padding: 3rem 6rem;
     box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.5);
     border: 1px solid rgba(105, 108, 110, 0.6);
     border-radius: 0.5rem;
     overflow: hidden;
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
     min-height: 100%;
     position: absolute;
     top: 50%;

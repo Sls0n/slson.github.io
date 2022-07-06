@@ -1,46 +1,43 @@
-
 .heading {
-    grid-column: center-start / center-end;
-    grid-row: 2 / 3;
-    margin-top: 13.2rem;
-    border-bottom: 1px solid rgba(#696C6E, .4);
-    padding: 1rem;
+	grid-column: center-start / center-end;
+	grid-row: 2 / 3;
+	margin-top: 13.2rem;
+	border-bottom: 1px solid rgba(#696c6e, 0.4);
+	padding: 1rem;
 
-    .paragraph {
-        text-align: start;
-    }
+	.paragraph {
+		text-align: start;
+	}
 }
 
 .content {
-    z-index: 20;
-    margin-top: 8rem;
-    grid-column: center-start / center-end;
-    grid-row: 3 / 4;
+	z-index: 20;
+	margin-top: 8rem;
+	grid-column: center-start / center-end;
+	grid-row: 3 / 4;
 
+	&__btn {
+		transition: all 0.3s;
+		margin-bottom: 2rem;
+		&:hover {
+			background-color: #1b1f26;
+		}
+	}
 
-    &__btn {
-        transition: all .3s;
-        margin-bottom: 2rem;
-        &:hover {
-            background-color: #1b1f26;
-        }
-    }
+	&__paragraph {
+		@include respond(phone) {
+			padding: 1.3rem 2.6rem;
+		}
 
-    &__paragraph {
+		font-family: "Titillium Web", sans-serif;
+		font-size: 1.9rem;
+		font-weight: 400;
+		color: #ccc;
 
-        @include respond (phone) {
-            padding: 1.3rem 2.6rem;
-        }
+		letter-spacing: 0.05rem;
+		padding: 3rem 6rem;
 
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 1.9rem;
-        font-weight: 400;
-        color: #ccc;
-        
-        letter-spacing: .05rem;
-        padding: 3rem 6rem;
-
-        background-image: linear-gradient(
+		background-image: linear-gradient(
 			to right bottom,
 			rgba(#1b1f26, 0.4),
 			rgba(#1e1f24, 0.4)
@@ -49,9 +46,9 @@
 		border: 1px solid rgba(#696c6e, 0.6);
 		border-radius: 0.5rem;
 		overflow: hidden;
-    }
+	}
 }
 
 .span-text {
-    font-family: 'Inconsolata', monospace;
+	font-family: "Inconsolata", monospace;
 }

@@ -1,90 +1,85 @@
 .main {
-    grid-column: center-start / center-end;
-    grid-row: 2 / 3;
+	grid-column: center-start / center-end;
+	grid-row: 2 / 3;
 
-    margin: 13.2rem auto;
-    z-index: 10;
+	margin: 13.2rem auto;
+	z-index: 10;
 
+	&__silson {
+		font-weight: 600;
+		color: #838b9e;
+		transition: all 0.3s;
 
-    &__silson {
-        font-weight: 600;
-        color: #838b9e;
-        transition: all .3s;
+		&:hover {
+			color: #9baed3;
+		}
+	}
 
-        &:hover {
-            color: #9baed3;
-        }
-    }
+	&__btn1 {
+		@include respond(tab-land) {
+			font-size: 1.5rem;
+		}
 
-    &__btn1 {
+		@include respond(tab-port) {
+			font-size: 1.4rem;
+		}
 
-        @include respond(tab-land) {
-            font-size: 1.5rem;
-        }
+		font-family: inherit;
+		padding: 0.9rem 1.65rem;
+		font-size: 1.75rem;
+		background-color: transparent;
+		color: #f2f2f2;
+		border: 1px solid rgba(#696c6e, 0.4);
+		border-radius: 1rem;
+		transition: all 0.3s;
+		cursor: pointer;
+		z-index: 10;
+		text-decoration: none;
 
-        @include respond(tab-port) {
-            font-size: 1.4rem;
-        }
+		&:hover {
+			background-color: #f2f2f2;
+			color: #333;
+			border: 1px solid transparent;
+		}
 
-        font-family: inherit;
-        padding: .9rem 1.65rem;
-        font-size: 1.75rem;
-        background-color: transparent;
-        color: #f2f2f2;
-        border: 1px solid rgba(#696C6E, .4);
-        border-radius: 1rem;
-        transition: all .3s;
-        cursor: pointer;
-        z-index: 10;
-        text-decoration: none;
+		&:active {
+			transform: scale(1.05);
+		}
+	}
 
-        &:hover {
-            background-color: #f2f2f2;
-            color: #333;
-            border: 1px solid transparent;
-        }
+	&__btn2 {
+		@include respond(tab-port) {
+			font-size: 1.4rem;
+		}
 
-        &:active {
-            transform: scale(1.05);
-        }
-    }
+		@include respond(tab-land) {
+			font-size: 1.5rem;
+		}
+		text-decoration: none;
+		font-family: inherit;
+		padding: 0.9rem 1.65rem;
+		font-size: 1.75rem;
+		background-color: rgba(#696c6e, 0.3);
+		color: #f2f2f2;
+		border: 1px solid rgba(#696c6e, 0.3);
+		border-radius: 1rem;
+		transition: all 0.3s;
+		cursor: pointer;
+		z-index: 10;
 
-    &__btn2 {
+		&:hover {
+			background-color: transparent;
+			color: #f2f2f2;
+			border: 1px solid rgba(#696c6e, 0.3);
+		}
 
-        @include respond(tab-port) {
-            font-size: 1.4rem;
-        }
+		&:active {
+			transform: scale(1.05);
+		}
+	}
 
-        @include respond(tab-land) {
-            font-size: 1.5rem;
-        }
-        text-decoration: none;
-        font-family: inherit;
-        padding: .9rem 1.65rem;
-        font-size: 1.75rem;
-        background-color: rgba(#696C6E, .3);
-        color: #f2f2f2;
-        border: 1px solid rgba(#696C6E, .3);
-        border-radius: 1rem;
-        transition: all .3s;
-        cursor: pointer;
-        z-index: 10;
-
-        &:hover {
-            background-color: transparent;
-            color: #f2f2f2;
-            border: 1px solid rgba(#696C6E, .3);
-        }
-
-        &:active {
-            transform: scale(1.05);
-        }
-    }
-
-    &__button-box {
-        display: flex;
-        justify-content: center;
-    }
-
+	&__button-box {
+		display: flex;
+		justify-content: center;
+	}
 }
-

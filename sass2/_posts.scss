@@ -1,67 +1,63 @@
 .blogs-text {
-    margin-top: 13.2rem;
-    grid-column: center-start / span 1;
-    z-index: 20;
+	margin-top: 13.2rem;
+	grid-column: center-start / span 1;
+	z-index: 20;
 
-    &__heading {
-        font-size: 4rem !important;
-        
-    }
+	&__heading {
+		font-size: 4rem !important;
+	}
 }
 
 .posts {
-    margin-top: 4rem;
-    grid-row: 3 / 4;
-    grid-column: center-start / center-end;
+	margin-top: 4rem;
+	grid-row: 3 / 4;
+	grid-column: center-start / center-end;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    gap: 3rem;
-
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+	gap: 3rem;
 }
 
 .onclick {
-    text-decoration: none;
-    
+	text-decoration: none;
 }
 
 .post {
-    cursor: pointer;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 2.4rem;
-    row-gap: .5rem;
-    background-image: linear-gradient(
-			to right bottom,
-			rgba(#1b1f26, 0.4),
-			rgba(#1e1f24, 0.4)
-		);
+	cursor: pointer;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 2.4rem;
+	row-gap: 0.5rem;
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(#1b1f26, 0.4),
+		rgba(#1e1f24, 0.4)
+	);
 	box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.5);
 	border: 1px solid rgba(#696c6e, 0.6);
 	border-radius: 0.7rem;
 	overflow: hidden;
 	backdrop-filter: blur(2px);
 
-    &__heading-1 {
-        font-size: 2.3rem !important;
-    }
+	&__heading-1 {
+		font-size: 2.3rem !important;
+	}
 
-    &__heading-2 {
-        font-size: 1.8rem !important;
-    }
+	&__heading-2 {
+		font-size: 1.8rem !important;
+	}
 
+	&__paragraph {
+		margin-top: 0.7rem;
+		text-align: start !important;
+		align-self: flex-start;
+	}
 
-    &__paragraph {
-        margin-top: .7rem;
-        text-align: start !important;
-        align-self: flex-start;
-    }
-
-    &__button {
-        margin-top: .7rem;
-        text-decoration: none;
-        color: #f2f2f2;
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
+	&__button {
+		margin-top: 0.7rem;
+		text-decoration: none;
+		color: #f2f2f2;
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
 }

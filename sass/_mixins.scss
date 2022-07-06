@@ -1,20 +1,51 @@
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media (max-width: 37.5em) { @content }; //600px
-    }
-    @if $breakpoint == tab-port {
-        @media (max-width: 56.25em) { @content }; //900px
-    }
-    @if $breakpoint == tab-land {
-        @media (max-width: 75em) { @content }; //1200px
-    }
-    @if $breakpoint == skill-end {
-        @media (max-width: 61.31em) { @content };
-    }
-    @if $breakpoint == big-desktop {
-        @media (min-width: 112.5em) { @content }; //1800px
-    }
+	@if $breakpoint == phone-low2 {
+		@media (max-width: 31.25em) {
+			@content;
+		}
+	}
+	@if $breakpoint == phone-low {
+		@media (max-width: 27.5em) {
+			@content;
+		}
+	}
+	@if $breakpoint == nav-mobile {
+		@media (max-width: 35em) {
+			@content;
+		}
+	}
 
+	@if $breakpoint == phone {
+		@media (max-width: 37.5em) {
+			@content;
+		} //600px
+	}
+
+	@if $breakpoint == text-end {
+		@media (max-width: 46.3125em) {
+			@content;
+		} //741px
+	}
+	@if $breakpoint == tab-port {
+		@media (max-width: 56.25em) {
+			@content;
+		} //900px
+	}
+	@if $breakpoint == tab-land {
+		@media (max-width: 75em) {
+			@content;
+		} //1200px
+	}
+	@if $breakpoint == skill-end {
+		@media (max-width: 61.31em) {
+			@content;
+		}
+	}
+	@if $breakpoint == big-desktop {
+		@media (min-width: 112.5em) {
+			@content;
+		} //1800px
+	}
 }
 
 // Media Query Manager

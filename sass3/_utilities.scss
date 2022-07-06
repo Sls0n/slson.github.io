@@ -1,72 +1,71 @@
 .mt-sm {
-
-    @include respond(tab-land) {
-        margin-top: 1.8rem;
-    }
-    margin-top: 2rem;
+	@include respond(tab-land) {
+		margin-top: 1.8rem;
+	}
+	margin-top: 2rem;
 }
 .mt-nm {
-    @include respond(tab-land) {
-        margin-top: 3.6rem;
-    }
-    margin-top: 4rem;
+	@include respond(tab-land) {
+		margin-top: 3.6rem;
+	}
+	margin-top: 4rem;
 }
 .mt-bg {
-    @include respond(tab-land) {
-        margin-top: 4rem;
-    }
-    margin-top: 8rem;
+	@include respond(tab-land) {
+		margin-top: 4rem;
+	}
+	margin-top: 8rem;
 }
 .mt-hg {
-    @include respond(tab-land) {
-        margin-top: 8rem;
-    }
-    margin-top: 12rem;
+	@include respond(tab-land) {
+		margin-top: 8rem;
+	}
+	margin-top: 12rem;
 }
 
 .mr-sm {
-    @include respond(tab-land) {
-        margin-right: 1.8rem;
-    }
-    margin-right: 2rem;
+	@include respond(tab-land) {
+		margin-right: 1.8rem;
+	}
+	margin-right: 2rem;
 }
 .mr-nm {
-    @include respond(tab-land) {
-        margin-right: 3.6rem;
-    }
-    margin-right: 4rem;
+	@include respond(tab-land) {
+		margin-right: 3.6rem;
+	}
+	margin-right: 4rem;
 }
 .mr-bg {
-    @include respond(tab-land) {
-        margin-right: 5.2rem;
-    }
-    margin-right: 6rem;
+	@include respond(tab-land) {
+		margin-right: 5.2rem;
+	}
+	margin-right: 6rem;
 }
 .mr-hg {
-    @include respond(tab-land) {
-        margin-right: 8rem;
-    }
-    margin-right: 12rem;
+	@include respond(tab-land) {
+		margin-right: 8rem;
+	}
+	margin-right: 12rem;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
 .span-font {
-    font-family: 'Inconsolata', monospace;
+	font-family: "Inconsolata", monospace;
 }
 
 .span-bold {
-    font-weight: 800;
+	font-weight: 800;
 }
 
 .span-italic {
-    font-style: italic;
+	font-style: italic;
 }
 
 .span-color {
-    color: rgb(136, 133, 133);
+	color: rgb(136, 133, 133);
 }
 
 .span-color2 {
-    color: rgb(185, 185, 185);
+	color: rgb(185, 185, 185);
 }
