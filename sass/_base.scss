@@ -18,6 +18,10 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 
+	@include respond(tab-land) {
+		font-size: 60%;
+	}
+
 	@include respond(text-end) {
 		font-size: 58%;
 	}
@@ -29,6 +33,12 @@ html {
 	}
 	@include respond(phone-low2) {
 		font-size: 45%;
+	}
+	@include respond(phone-extremelow) {
+		font-size: 43%;
+	}
+	@include respond(phone-extremelow2) {
+		font-size: 35%;
 	}
 }
 

@@ -5,18 +5,8 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 
-	@include respond(tab-port) {
-		font-size: calc(2.64rem - 0.3rem);
-	}
 
 	&__heading {
-		@include respond(tab-land) {
-			font-size: calc(2.64rem - 0.2rem);
-		}
-
-		@include respond(tab-port) {
-			font-size: calc(2.64rem - 0.3rem);
-		}
 
 		grid-row: 1 / 2;
 		justify-self: flex-start;
@@ -34,13 +24,7 @@
 		z-index: 10;
 
 		&-link {
-			@include respond(tab-land) {
-				font-size: calc(1.65rem - 0.2rem);
-			}
 
-			@include respond(tab-port) {
-				font-size: calc(1.65rem - 0.3rem);
-			}
 
 			color: #f2f2f2;
 			font-size: 1.65rem;

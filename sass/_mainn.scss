@@ -16,13 +16,6 @@
 	}
 
 	&__btn1 {
-		@include respond(tab-land) {
-			font-size: 1.5rem;
-		}
-
-		@include respond(tab-port) {
-			font-size: 1.4rem;
-		}
 
 		font-family: inherit;
 		padding: 0.9rem 1.65rem;
@@ -48,13 +41,7 @@
 	}
 
 	&__btn2 {
-		@include respond(tab-port) {
-			font-size: 1.4rem;
-		}
 
-		@include respond(tab-land) {
-			font-size: 1.5rem;
-		}
 		text-decoration: none;
 		font-family: inherit;
 		padding: 0.9rem 1.65rem;
