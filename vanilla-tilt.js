@@ -1,5 +1,5 @@
 var VanillaTilt = (function () {
-'use strict';
+'use strict'; 
 
 class VanillaTilt {
   constructor(element, settings = {}) {

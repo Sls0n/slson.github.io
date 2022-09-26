@@ -50,6 +50,7 @@
   color: rgba(242, 242, 242, 0.5568627451);
 }
 .about__picturebox {
+  background: linear-gradient(rgba(27, 31, 38, 0.6), rgba(27, 31, 38, 0.6)), url(../images/hacker.jpg);
   background-position: center;
   margin-right: 5rem;
   background-size: cover;
@@ -198,9 +199,22 @@ body {
 }
 
 .contact {
-  grid-column: center-start/center-end;
+  grid-column: full-start/full-end;
   grid-row: 5/6;
-  padding: 20rem;
+  margin-top: 12rem;
+}
+.contact__box {
+  z-index: 20;
+  background-image: linear-gradient(105deg, rgba(27, 31, 38, 0.5) 0%, rgba(27, 31, 38, 0.5) 50%, rgba(9, 10, 15, 0.2) 50%);
+  background-size: cover;
+  padding: 3rem 6rem;
+  box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.5);
+  border: 1px solid rgba(105, 108, 110, 0.6);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  min-height: 60rem;
 }
 
 .footer {
