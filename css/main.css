@@ -444,14 +444,12 @@ label:active {
     cursor: pointer;
     z-index: 20;
   }
-
   .header__nav {
     position: fixed;
     top: 0%;
     right: 0%;
     display: none;
   }
-
   .header__nav-link {
     display: block;
     margin: 1rem 0;
@@ -588,7 +586,7 @@ label:active {
   width: 50%;
 }
 .skill__container .skill-box .skill-bar .skill-per.c {
-  width: 100%;
+  width: 30%;
 }
 .skill__container .skill-box .skill-bar .skill-per.music {
   width: 70%;

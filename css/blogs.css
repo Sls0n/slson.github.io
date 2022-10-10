@@ -264,14 +264,12 @@ label:active {
     cursor: pointer;
     z-index: 20;
   }
-
   .header__nav {
     position: fixed;
     top: 0%;
     right: 0%;
     display: none;
   }
-
   .header__nav-link {
     display: block;
     margin: 0 auto;
@@ -555,6 +553,7 @@ html {
 }
 
 #stars {
+  visibility: hidden;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -574,6 +573,7 @@ html {
 }
 
 #stars3 {
+  visibility: hidden;
   width: 3px;
   height: 3px;
   background: transparent;

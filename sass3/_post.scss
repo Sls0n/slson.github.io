@@ -5,7 +5,22 @@
 	border-bottom: 1px solid rgba(#696c6e, 0.4);
 	padding: 1rem;
 
+	.heading-2 {
+		font-size: 4rem;
+	}
+
+	.heading-3 {
+		font-size: 1.8rem;
+		color: #fff;
+		font-weight: 300;
+		margin-top: -6rem;
+		border-bottom: 1px solid rgba(#f0f0f0, 0.5);
+		text-align: start;
+		width: max-content;
+	}
+
 	.paragraph {
+		margin-top: -1rem;
 		text-align: start;
 	}
 }
@@ -18,9 +33,10 @@
 
 	&__btn {
 		transition: all 0.3s;
-		margin-bottom: 2rem;
+		padding: 1.5rem 3rem !important;
+		
 		&:hover {
-			background-color: #1b1f26;
+			background-color: #3d3d3d;
 		}
 	}
 
@@ -29,8 +45,8 @@
 			padding: 1.3rem 2.6rem;
 		}
 
-		font-family: "Titillium Web", sans-serif;
-		font-size: 1.9rem;
+		font-family: "Inter", sans-serif;
+		font-size: 2rem;
 		font-weight: 400;
 		color: #ccc;
 
@@ -50,5 +66,13 @@
 }
 
 .span-text {
-	font-family: "Inconsolata", monospace;
+	font-family: "Titillium Web", sans-serif;
+}
+
+.cssjoke {
+	object-fit: cover;
+}
+
+.buttontext {
+	font-size: 2.2rem;
 }
