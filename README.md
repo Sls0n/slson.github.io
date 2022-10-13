@@ -1,5 +1,5 @@
 # slson.github.io
 Portfolio website of slson
 
-Preview -->
-https://slson.netlify.app
+<a href="https://slson.netlify.app">Preview</a>
+
