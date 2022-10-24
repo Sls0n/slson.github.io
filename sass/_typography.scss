@@ -1,49 +1,53 @@
 .heading-1 {
-	font-size: 6rem;
-	color: #f2f2f2;
-	font-weight: 500;
-	text-align: center;
-	letter-spacing: -1.5px;
-	white-space: nowrap;
+  font-size: 6rem;
+  color: #f2f2f2;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -1.5px;
+  white-space: nowrap;
 
-	@include respond(tab-land) {
-		letter-spacing: -0.1px;
-	}
+  @include respond(tab-land) {
+    letter-spacing: -0.1px;
+  }
 
-	@include respond(tab-port) {
-		letter-spacing: -0.5px;
-	}
-
+  @include respond(tab-port) {
+    letter-spacing: -0.5px;
+  }
 }
 
 .heading-2 {
-	font-size: 3rem;
-	color: #f2f2f2;
-	font-weight: 500;
-
-
+  font-size: 3rem;
+  color: #f2f2f2;
+  font-weight: 500;
 }
 
 .heading-4 {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 .paragraph {
-	font-size: 1.65rem;
-	color: #8c949b;
-	text-align: center;
+  font-size: 1.65rem;
+  color: #8c949b;
+  text-align: center;
 }
 
 .btn {
-	font-family: inherit;
-	color: #f2f2f2;
-	font-size: 1.65rem;
-	border: 1px solid rgba(#545962, 1);
-	border-radius: 1rem;
-	padding: 0.85rem 1.85rem;
-	background-color: transparent;
-	cursor: pointer;
-	transition: all 0.3s;
-	backface-visibility: hidden;
-	text-decoration: none;
+  font-family: inherit;
+  font-size: 1.65rem;
+  padding: 0.85rem 1.85rem;
+  backface-visibility: hidden;
+  text-decoration: none;
+  background-color: rgba(#f2f2f2, 0.95);
+  color: #333;
+  border: 1px solid rgba(#696c6e, 0.3);
+  border-radius: 1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  z-index: 10;
+
+  &:hover {
+    background-color: transparent;
+    color: #f2f2f2;
+    border: 1px solid rgba(#696c6e, 0.3);
+  }
 }

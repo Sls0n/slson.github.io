@@ -18,6 +18,7 @@
   box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.3);
   display: flex;
   justify-content: center;
+  border-radius: 0.8rem;
 }
 @media (max-width: 75em) {
   .about {
@@ -36,6 +37,27 @@
 }
 .about__paragraph {
   text-align: center;
+  font-size: 2rem !important;
+}
+@media (max-width: 75em) {
+  .about__paragraph {
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 56.25em) {
+  .about__paragraph {
+    font-size: 1.4rem !important;
+  }
+}
+@media (max-width: 37.5em) {
+  .about__paragraph {
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 27.5em) {
+  .about__paragraph {
+    font-size: 2rem !important;
+  }
 }
 .about__content {
   display: flex;
@@ -43,7 +65,7 @@
   justify-content: center;
 }
 .about__btn {
-  font-size: 1.4rem !important;
+  font-size: 1.5rem !important;
   display: inline-block;
   font-weight: 400;
   text-decoration: none;
@@ -72,8 +94,8 @@
 }
 @media (max-width: 46.3125em) {
   .about__picturebox {
-    height: 22rem;
-    width: 40rem;
+    height: 18rem;
+    width: 36rem;
   }
 }
 .about__textbox .paragraph {
@@ -98,16 +120,27 @@
 }
 @media (max-width: 27.5em) {
   .about__textbox .paragraph {
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
   }
 }
 
 figcaption {
   position: relative;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
   text-align: start;
-  color: #f2f2f2;
-  bottom: -100%;
+  color: rgba(249, 249, 249, 0.75);
+  bottom: -104%;
+}
+@media (max-width: 37.5em) {
+  figcaption {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 27.5em) {
+  figcaption {
+    font-size: 0.8rem !important;
+  }
 }
 
 * {
@@ -174,6 +207,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -202,18 +236,12 @@ body {
   grid-column: full-start/full-end;
   grid-row: 5/6;
   margin-top: 12rem;
+  z-index: 26;
 }
 .contact__box {
-  z-index: 20;
-  background-image: linear-gradient(105deg, rgba(27, 31, 38, 0.5) 0%, rgba(27, 31, 38, 0.5) 50%, rgba(9, 10, 15, 0.2) 50%);
-  background-size: cover;
+  background-color: #fff9eb;
   padding: 3rem 6rem;
-  box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.5);
-  border: 1px solid rgba(105, 108, 110, 0.6);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  border-radius: 0.8rem;
   min-height: 60rem;
 }
 
@@ -367,6 +395,9 @@ body {
   margin: 13.2rem auto;
   z-index: 10;
 }
+.main__paragraph {
+  white-space: nowrap;
+}
 .main__silson {
   font-weight: 600;
   color: #838b9e;
@@ -379,8 +410,8 @@ body {
   font-family: inherit;
   padding: 0.9rem 1.65rem;
   font-size: 1.75rem;
-  background-color: transparent;
-  color: #f2f2f2;
+  background-color: #f2f2f2;
+  color: #333;
   border: 1px solid rgba(105, 108, 110, 0.4);
   border-radius: 1rem;
   transition: all 0.3s;
@@ -389,9 +420,9 @@ body {
   text-decoration: none;
 }
 .main__btn1:hover {
-  background-color: #f2f2f2;
-  color: #333;
-  border: 1px solid transparent;
+  background-color: transparent;
+  color: #f2f2f2;
+  border: 1px solid rgba(105, 108, 99, 0.4);
 }
 .main__btn1:active {
   transform: scale(1.05);
@@ -402,8 +433,8 @@ body {
   padding: 0.9rem 1.65rem;
   font-size: 1.75rem;
   background-color: rgba(105, 108, 110, 0.3);
-  color: #f2f2f2;
   border: 1px solid rgba(105, 108, 110, 0.3);
+  color: #f2f2f2;
   border-radius: 1rem;
   transition: all 0.3s;
   cursor: pointer;
@@ -693,17 +724,23 @@ label:active {
 
 .btn {
   font-family: inherit;
-  color: #f2f2f2;
   font-size: 1.65rem;
-  border: 1px solid #545962;
-  border-radius: 1rem;
   padding: 0.85rem 1.85rem;
-  background-color: transparent;
-  cursor: pointer;
-  transition: all 0.3s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   text-decoration: none;
+  background-color: rgba(242, 242, 242, 0.95);
+  color: #333;
+  border: 1px solid rgba(105, 108, 110, 0.3);
+  border-radius: 1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  z-index: 10;
+}
+.btn:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+  border: 1px solid rgba(105, 108, 110, 0.3);
 }
 
 .mt-sm {

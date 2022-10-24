@@ -1,72 +1,74 @@
 .main {
-	grid-column: center-start / center-end;
-	grid-row: 2 / 3;
+  grid-column: center-start / center-end;
+  grid-row: 2 / 3;
 
-	margin: 13.2rem auto;
-	z-index: 10;
+  margin: 13.2rem auto;
+  z-index: 10;
 
-	&__silson {
-		font-weight: 600;
-		color: #838b9e;
-		transition: all 0.3s;
+  &__paragraph {
+    white-space: nowrap;
+  }
 
-		&:hover {
-			color: #9baed3;
-		}
-	}
+  &__silson {
+    font-weight: 600;
+    color: #838b9e;
+    transition: all 0.3s;
 
-	&__btn1 {
+    &:hover {
+      color: #9baed3;
+    }
+  }
 
-		font-family: inherit;
-		padding: 0.9rem 1.65rem;
-		font-size: 1.75rem;
-		background-color: transparent;
-		color: #f2f2f2;
-		border: 1px solid rgba(#696c6e, 0.4);
-		border-radius: 1rem;
-		transition: all 0.3s;
-		cursor: pointer;
-		z-index: 10;
-		text-decoration: none;
+  &__btn1 {
+    font-family: inherit;
+    padding: 0.9rem 1.65rem;
+    font-size: 1.75rem;
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid rgba(#696c6e, 0.4);
+    border-radius: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    z-index: 10;
+    text-decoration: none;
 
-		&:hover {
-			background-color: #f2f2f2;
-			color: #333;
-			border: 1px solid transparent;
-		}
+    &:hover {
+      background-color: transparent;
+      color: #f2f2f2;
+      border: 1px solid rgba(#696c63, 0.4);
+    }
 
-		&:active {
-			transform: scale(1.05);
-		}
-	}
+    &:active {
+      transform: scale(1.05);
+    }
+  }
 
-	&__btn2 {
+  &__btn2 {
+    text-decoration: none;
+    font-family: inherit;
+    padding: 0.9rem 1.65rem;
+    font-size: 1.75rem;
+    background-color: rgba(#696c6e, 0.3);
+    border: 1px solid rgba(#696c6e, 0.3);
+    color: #f2f2f2;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    z-index: 10;
 
-		text-decoration: none;
-		font-family: inherit;
-		padding: 0.9rem 1.65rem;
-		font-size: 1.75rem;
-		background-color: rgba(#696c6e, 0.3);
-		color: #f2f2f2;
-		border: 1px solid rgba(#696c6e, 0.3);
-		border-radius: 1rem;
-		transition: all 0.3s;
-		cursor: pointer;
-		z-index: 10;
+    &:hover {
+      background-color: transparent;
+      color: #f2f2f2;
+      border: 1px solid rgba(#696c6e, 0.3);
+    }
 
-		&:hover {
-			background-color: transparent;
-			color: #f2f2f2;
-			border: 1px solid rgba(#696c6e, 0.3);
-		}
+    &:active {
+      transform: scale(1.05);
+    }
+  }
 
-		&:active {
-			transform: scale(1.05);
-		}
-	}
-
-	&__button-box {
-		display: flex;
-		justify-content: center;
-	}
+  &__button-box {
+    display: flex;
+    justify-content: center;
+  }
 }

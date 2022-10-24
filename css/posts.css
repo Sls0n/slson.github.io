@@ -332,7 +332,7 @@ label:active {
 }
 .heading .heading-3 {
   font-size: 1.8rem;
-  color: #fff;
+  color: #cfcece;
   font-weight: 300;
   margin-top: -6rem;
   border-bottom: 1px solid rgba(240, 240, 240, 0.5);
@@ -360,8 +360,8 @@ label:active {
   background-color: #3d3d3d;
 }
 .content__paragraph {
-  font-family: "Inter", sans-serif;
-  font-size: 2rem;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.9rem;
   font-weight: 400;
   color: #ccc;
   letter-spacing: 0.05rem;
