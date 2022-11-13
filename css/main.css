@@ -5,6 +5,7 @@
 1200 - 1800px :   [This is where out normal effect will apply]
 1800px+       :    Big Desktop
 */
+
 .about {
   grid-column: full-start/full-end;
   grid-row: 4/5;
