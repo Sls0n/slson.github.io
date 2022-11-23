@@ -1,6 +1,18 @@
 .footer {
-	grid-column: center-start / center-end;
+	grid-column: full-start / full-end;
 	grid-row: 6 / 7;
+	z-index: 100000;
 
-	padding: 20rem;
+	padding: 2.5rem;
+
+	font-size: 1.6rem;
+	color: #f2f2f2;
+	font-family: inherit;
+	text-transform: uppercase;
+
+	background-image: linear-gradient(rgba(#1b1f26, 1), rgba(#1e1f24, 1));
+
+	.temp {
+		text-align: center;
+	}
 }

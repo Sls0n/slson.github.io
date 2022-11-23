@@ -9,8 +9,9 @@
 
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	padding: 10rem 0rem;
 
-	margin: 12rem 2rem;
+	margin: 13.2rem 2rem;
 	gap: 2rem;
 	z-index: 10;
 	min-height: 40rem;
@@ -30,7 +31,7 @@
 			rgba(#1e1f24, 0.4)
 		);
 		padding: 3rem 6rem;
-		box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.5);
+		box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.3);
 		border: 1px solid rgba(#696c6e, 0.6);
 		border-radius: 0.5rem;
 		overflow: hidden;
@@ -88,11 +89,11 @@
 				}
 
 				&.python {
-					width: 65%;
+					width: 60%;
 				}
 
 				&.javascript {
-					width: 50%;
+					width: 70%;
 				}
 
 				&.c {

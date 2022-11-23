@@ -16,7 +16,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  scroll-behavior: smooth;
 
   @include respond(tab-land) {
     font-size: 60%;

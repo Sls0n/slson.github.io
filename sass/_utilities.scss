@@ -1,3 +1,4 @@
+
 .mt-sm {
 	@include respond(tab-land) {
 		margin-top: 1.8rem;
@@ -19,6 +20,22 @@
 	margin-top: 4rem;
 }
 .mt-bg {
+	@include respond(tab-land) {
+		margin-top: 4rem;
+	}
+
+	@include respond(tab-port) {
+		margin-top: 2.6rem;
+	}
+	margin-top: 8rem;
+
+	@include respond(phone) {
+		margin-top: 0rem;
+	}
+}
+
+.mt-bg-2 {
+
 	@include respond(tab-land) {
 		margin-top: 4rem;
 	}

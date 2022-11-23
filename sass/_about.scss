@@ -23,6 +23,9 @@
   border-radius: 0.8rem;
 
   &__heading {
+    margin-bottom: 1.5rem;
+    text-align: start;
+
     @include respond(tab-port) {
       font-size: 2.4rem !important;
     }
@@ -30,21 +33,22 @@
 
   &__paragraph {
     text-align: center;
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
 
-    @include respond(tab-land) {
-      font-size: 1.5rem !important;
-    }
+    // @include respond(tab-land) {
+    //   font-size: 1.8rem !important;
+    // }
 
-    @include respond(tab-port) {
-      font-size: 1.4rem !important;
-    }
-    @include respond(phone) {
-      font-size: 1.2rem !important;
-    }
-    @include respond(phone-low) {
-      font-size: 2rem !important;
-    }
+    // @include respond(tab-port) {
+    //   font-size: 1.7rem !important;
+    // }
+
+    // @include respond(phone) {
+    //   font-size: 1.4rem !important;
+    // }
+    // @include respond(phone-low) {
+    //   font-size: 2rem !important;
+    // }
   }
 
   &__content {
@@ -54,39 +58,53 @@
   }
 
   &__btn {
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
     display: inline-block;
     font-weight: 400;
     text-decoration: none;
     color: #f2f2f28e;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #f2f2f2;
+    }
   }
 
-  &__picturebox {
-    @include respond(tab-land) {
-      height: 23rem;
-      width: 23rem;
-    }
+  // &__picturebox {
+  //   @include respond(tab-land) {
+  //     height: 23rem;
+  //     width: 23rem;
+  //   }
 
-    @include respond(tab-port) {
-      height: 20rem;
-      width: 35rem;
-    }
-    @include respond(text-end) {
-      height: 18rem;
-      width: 36rem;
-    }
+  //   @include respond(tab-port) {
+  //     height: 20rem;
+  //     width: 35rem;
+  //   }
+  //   @include respond(text-end) {
+  //     height: 18rem;
+  //     width: 36rem;
+  //   }
 
-    background: linear-gradient(rgba(#1b1f26, 0.6), rgba(#1b1f26, 0.6)),
-      url(../images/hacker.jpg);
-    background-position: center;
-    margin-right: 5rem;
-    background-size: cover;
-    height: 25rem;
-    width: 25rem;
-    align-self: center;
-  }
+  //   background: linear-gradient(rgba(#1b1f26, 0.6), rgba(#1b1f26, 0.6)),
+  //     url(../images/hacker.jpg);
+  //   // margin-right: 5rem;
+  //   background-size: cover;
+  //   height: 50rem;
+  //   width: 100%;
+  //   background-size: 50rem;
+  //   background-repeat: no-repeat;
+  // }
 
   &__textbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+
+    @include respond(tab-end) {
+      gap: 2rem;
+    }
+
     .paragraph {
       @include respond(tab-land) {
         font-size: 1.5rem !important;
@@ -109,18 +127,50 @@
   }
 }
 
-figcaption {
-  position: relative;
-  font-size: 1.6rem;
-  font-family: 'Rubik', sans-serif;
-  text-align: start;
-  color: rgba(#f9f9f9, 0.75);
-  bottom: -104%;
+.aboutme {
+  flex-basis: 70%;
 
-  @include respond(phone) {
-    font-size: 1rem !important;
-  }
-  @include respond(phone-low) {
-    font-size: 0.8rem !important;
+  @include respond(tab-port2) {
+    flex: 1;
   }
 }
+
+.picbox {
+  flex: 1;
+  background: linear-gradient(rgba(#1b1f26, 0.6), rgba(#1b1f26, 0.6)),
+    url(../images/hacker.jpg);
+  // margin-right: 5rem;
+  width: 100%;
+  height: 35rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include respond(tab-land) {
+    height: 32rem;
+  }
+
+  @include respond(tab-port2) {
+    display: none;
+  }
+  // @include respond(text-end) {
+  //   height: 18rem;
+  // }
+}
+
+// figcaption {
+//   position: relative;
+//   font-size: 1.6rem;
+//   font-family: 'Rubik', sans-serif;
+//   text-align: start;
+//   color: rgba(#f9f9f9, 0.75);
+//   bottom: -104%;
+
+//   @include respond(phone) {
+//     font-size: 1rem !important;
+//   }
+//   @include respond(phone-low) {
+//     font-size: 0.8rem !important;
+//   }
+// }
