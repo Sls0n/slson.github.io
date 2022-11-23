@@ -7,13 +7,12 @@
   z-index: 10000;
 
   &__sticky {
-  position: fixed;
-  background-color: rgba(#1C1F25, .99);
-  width: 100vw;
-  backdrop-filter: blur(3.5px);
-  box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.3);
-
-}
+    position: fixed;
+    background-color: rgba(#1c1f25, 0.99);
+    width: 100vw;
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.3);
+  }
 
   &__heading {
     grid-row: 1 / 2;
@@ -151,4 +150,6 @@
   }
 }
 
-
+.none {
+  display: none;
+}
