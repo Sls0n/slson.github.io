@@ -85,6 +85,15 @@ body {
   padding: 2.1rem 3.1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  z-index: 10000;
+}
+.header__sticky {
+  position: fixed;
+  background-color: rgba(28, 31, 37, 0.99);
+  width: 100vw;
+  -webkit-backdrop-filter: blur(3.5px);
+          backdrop-filter: blur(3.5px);
+  box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.3);
 }
 @media (max-width: 56.25em) {
   .header {
@@ -240,6 +249,10 @@ body {
 }
 .header__btn:active {
   transform: translateY(2px);
+}
+
+.none {
+  display: none;
 }
 
 label {
@@ -553,7 +566,6 @@ html {
 }
 
 #stars {
-  visibility: hidden;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -573,7 +585,6 @@ html {
 }
 
 #stars3 {
-  visibility: hidden;
   width: 3px;
   height: 3px;
   background: transparent;
