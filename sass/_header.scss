@@ -6,6 +6,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   z-index: 10000;
 
+  transition: transform 1s, opacity 1s;
+
   &__sticky {
     position: fixed;
     background-color: rgba(#1c1f25, 0.99);
@@ -13,6 +15,10 @@
     backdrop-filter: blur(3.5px);
     box-shadow: 0 4rem 5rem rgba(3, 3, 3, 0.3);
   }
+
+  // &__transform {
+  //   transform: translateY(2rem);
+  // }
 
   &__heading {
     grid-row: 1 / 2;

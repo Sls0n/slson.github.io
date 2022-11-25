@@ -591,3 +591,12 @@ html {
     transform: translateY(-2000px);
   }
 }
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.main-section {
+  transition: transform 1s, opacity 1s;
+}

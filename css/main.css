@@ -242,6 +242,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   z-index: 10000;
+  transition: transform 1s, opacity 1s;
 }
 .header__sticky {
   position: fixed;
@@ -600,21 +601,24 @@ label:active {
   position: relative;
   display: block;
   height: 100%;
-  width: 90%;
+  width: 0%;
   border-radius: 0.6rem;
   background: rgba(242, 242, 242, 0.9);
-  -webkit-animation: progress 0.4s ease-in-out forwards;
-          animation: progress 0.4s ease-in-out forwards;
+  -webkit-animation: progress 0.8s ease-out forwards;
+          animation: progress 0.8s ease-out forwards;
   opacity: 0;
 }
+.skill__container .skill-box .skill-bar .skill-per.html {
+  width: 95%;
+}
 .skill__container .skill-box .skill-bar .skill-per.css {
-  width: 80%;
+  width: 85%;
 }
 .skill__container .skill-box .skill-bar .skill-per.python {
   width: 60%;
 }
 .skill__container .skill-box .skill-bar .skill-per.javascript {
-  width: 70%;
+  width: 75%;
 }
 .skill__container .skill-box .skill-bar .skill-per.c {
   width: 30%;
@@ -922,4 +926,12 @@ html {
   to {
     transform: translateY(-2000px);
   }
+}
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.main-section {
+  transition: transform 1s, opacity 1s;
 }/*# sourceMappingURL=main.css.map */

@@ -73,3 +73,14 @@
 .span-big {
   font-size: 2.5rem !important;
 }
+
+.span-border {
+  border-left: 3px solid #ccc;
+  padding-left: 2rem;
+}
+
+.span-border-big::before {
+  content: "";
+  border-left: 3px solid #ccc;
+  padding-left: 5rem;
+}

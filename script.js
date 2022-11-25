@@ -12,6 +12,10 @@ const skillsSection = document.querySelector('#skills');
 
 const starsChildren = Array.from(stars.children);
 
+const allSections = document.querySelectorAll('.main-section');
+
+const skillper = document.querySelectorAll('.skill-per');
+
 // Star Toggle
 document.querySelector('.header__icon').addEventListener('click', function (e) {
   if (e.target.classList.contains('header--icon')) {
@@ -29,6 +33,7 @@ const stickyNav = function (entries) {
   const [entry] = entries;
   if (!entry.isIntersecting) {
     header.classList.add('header__sticky');
+    // header.classList.add('header__transform');
   } else {
     header.classList.remove('header__sticky');
   }
@@ -41,3 +46,33 @@ const mainObserver = new IntersectionObserver(stickyNav, {
 });
 
 mainObserver.observe(main);
+
+// Reveal on scroll
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  skillper.forEach(function (i) {
+    const arrayDup = ['skill-per'];
+    i.classList.remove(arrayDup);
+
+    // Width Animation Of Skills
+    if (!entry.isIntersecting) return;
+    i.classList.add('skill-per');
+    entry.target.classList.remove('scroll-reveal');
+    observer.unobserve(entry.target);
+  });
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('scroll-reveal');
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.2
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add('scroll-reveal');
+});
