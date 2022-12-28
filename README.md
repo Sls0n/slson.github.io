@@ -1,4 +1,4 @@
-# slson.github.io
-Portfolio website of slson <br>
-<a href="https://slson.netlify.app">Preview</a>
+# slson.netlify.app <br>
+My portfolio website <br>
+<a href="https://slson.netlify.app">Live demo</a>
 
