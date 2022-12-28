@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs &mdash; The unapparent perils of Self-Victimization</title>
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="../css/posts.css" />
+
+    <!-- Linking fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h3 class="header__heading">Slson.</h3>
+
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+
+        <div class="header__nav">
+          <a href="../index.html" class="header__nav-link"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="header__nav-icon"
+              viewBox="0 0 512 512"
+            >
+              <title>Home</title>
+              <path
+                d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+              <path
+                d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+            </svg>
+            Home</a
+          >
+          <a
+            href="https://sls0n.github.io/guessthenumber.github.io/"
+            class="header__nav-link"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="header__nav-icon"
+              viewBox="0 0 512 512"
+            >
+              <title>Projects</title>
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M176 464h160M256 464V336M384 224c0-50.64-.08-134.63-.12-160a16 16 0 00-16-16l-223.79.26a16 16 0 00-16 15.95c0 30.58-.13 129.17-.13 159.79 0 64.28 83 112 128 112S384 288.28 384 224z"
+              />
+              <path
+                d="M128 96H48v16c0 55.22 33.55 112 80 112M384 96h80v16c0 55.22-33.55 112-80 112"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+            </svg>
+            Projects</a
+          >
+          <a href="../blogs.html" class="header__nav-link"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="header__nav-icon"
+              viewBox="0 0 512 512"
+            >
+              <title>Blogs</title>
+              <rect
+                x="96"
+                y="48"
+                width="320"
+                height="416"
+                rx="48"
+                ry="48"
+                fill="none"
+                stroke="currentColor"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M176 128h160M176 208h160M176 288h80"
+              />
+            </svg>
+            Blogs</a
+          >
+        </div>
+
+        <div class="header__icon">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="header__icon-lightmd"><title>Toggle Particles</title><path d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"/></svg> -->
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="header__icon-menu"
+          >
+            <title>Toggle Dark Mode</title>
+            <path
+              d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+            />
+          </svg>
+        </div>
+
+        <button class="btn header__btn">Contact me</button>
+      </header>
+
+      <div class="heading">
+        <h2 class="heading-3 heading-author">Silson Sapkota</h2>
+      </div>
+
+      <div class="heading">
+        <h1 class="heading-2 heading-title">
+          3 &nbsp;| The unapparent perils of Self-Victimization
+        </h1>
+
+        <p class="paragraph paragraph-title">
+          <span class="span-color"><br />4-5 minutes </span>
+        </p>
+      </div>
+
+      <div class="content">
+        <p class="content__paragraph">
+          <span class="span-bold span-color2 span-font span-big span-border"
+            >"We blame. I mean, no shit? We're human, it's what we do."</span
+          >
+          <br />
+          <br />
+          <br />
+          What's more ludicrous is that our brain delightfully devours every
+          lies we try to feed it, resulting in imperceptible avoidance of
+          responsibility. It's like our brain loves munching on some juicy
+          misinformations and it's practically impractical to not fall for your
+          own shameless lies. Have you noticed how blatant lies in your head
+          slowly morph into oblivious truth? I used to think that the brain is
+          hard to deceive, but boy I was utterly unaware of how easy it is.
+          After constant exposure and bombardment of lies, we fall into a
+          fathomless state of self-delusion we've been devising in our heads,
+          leading to a distorted perception of actuality. We become convinced
+          that we are the victim and have been denied justice. This is precisely
+          why playing the blame game is a go-to resolution to feel good and
+          avoid responsibility. This is exactly the weird incentive behind being
+          a victim, even though we are the ones who commenced the inevitable
+          fuckening. Self-victimization turns one into a perpetual victim,
+          denying accountability and guilt for their own apparent mistakes. Here
+          are some examples of it:
+          <br />
+          <br />
+
+          <span class="span-italic span-bold">
+            "I am poor, but it's not my fault! The whole game is rigged. Fuck
+            capitalism! Capitalism is downright trash."
+          </span>
+          <br /><br />
+
+          <span class="span-italic span-bold">
+            "I got into an accident. Can you fucking believe it? I was driving
+            thoroughly like a good law-abiding citizen, but all of a sudden,
+            this absolute clown came out of thin air and crashed right into my
+            ass! I mean, seriously, who does that?"
+          </span>
+          <br /><br />
+
+          <span class="span-italic span-bold">
+            "There's no way I failed this test. Even lord can't fathom how
+            possibly an outright genius like me could have failed. I mean, it's
+            merely the cruel paper maker's fault. He made the questions tougher
+            than a titanium alloy. Seriously? Why would anyone do that? People
+            lack empathy. Humanity is gone."
+          </span>
+          <br /><br />
+
+          Okay! I reckon now you have a solid grasp of the blame game with the
+          above examples. If you don't, maybe it's time to get a brain scan and
+          see if there's anything funky going on up there. Or have
+          self-proclaimed intellectuals of Reddit & twitter explain to you like
+          you're a toddler or something. ELI5 is specially designed for
+          half-witted people like you. I mean, the examples I gave were
+          impeccable, clearly not my fault. I might as well be speaking to my
+          imaginary girlfriend now. At least she exists in my imagination,
+          unlike your brain. Just kidding, this was another bonus example for
+          all of you. But if you still don't get it, I won't waste my time
+          explaining it to someone whose IQ is lower than the temperature in
+          Antarctica and lower than the number of toes on a dolphin's foot. And
+          the best part, dolphins don't even have toes.
+          <span class="span-italic span-bold"
+            >Just kidding again, or am I?
+          </span>
+          <br />
+          <br />
+
+          These examples show what most of us do when faced with adversity - we
+          divert it away, either by blaming or by being the victim. The relation
+          between blaming and being the victim is convoluted yet so simple. By
+          blaming others for your problem, you become the victim. You are
+          essentially saying that you are not responsible for your own
+          circumstances and that you are at the mercy of someone else's actions
+          or behaviors.<br />
+          <br />
+
+          People blame others/something for their misery to delude themselves
+          into thinking they are not accountable for it. Blaming is easy and
+          might feel good, but all it does is imperceptibly entangle us in our
+          self-delusional bubble, making us incapable of ameliorating our
+          misery. Playing the victim or self-victimization is something we do as
+          a coping strategy to momentarily forget our problems, and constantly
+          doing so exposes us to the unapparent perils of it.<br /><br />
+
+          If you consider yourself a victim all the time, you'll believe it and
+          become trapped in a state of perpetual indignation. You won't strive
+          for change anymore since it's clearly not your fault. You'll be too
+          engaged in finding something to condemn in order to boost your
+          self-righteousness. Blaming is as compulsive as drugs, which creates a
+          massive dopamine surge in the brain due to which you want to do it
+          more and more and more and well, more.<br /><br />
+
+          Let's take an instance of you arriving at the office late, is it your
+          fault? Oh hell yeah it is... I mean, it is not, wtf? It's clearly the
+          busy traffic.
+          <span class="span-italic"
+            >"Dang it, boss, I literally got stuck in that mess for an hour. I
+            am so unlucky, ughh"</span
+          >. And the funniest part is that you're probably more convinced by
+          your own lie than your boss is, which then leads to you becoming the
+          victim. Blame all the time, and you'll find yourself cursing gravity
+          for your downfall one day. I mean if it wasn't for gravity then you
+          wouldn't fall, right? Or maybe it's the moon's fault for being so
+          fucking moody. Perhaps it's the rains' fault for pouring all my
+          braincells. It's Venus that made me have a small penus.
+          <span class="span-italic">"Um, actually it's peni-"</span>. Shut up
+          nerd, blame the creators of the English language.
+
+          <br /><br />
+
+          <span class="span-bold span-color2">-- TO BE CONTINUED </span>
+          (don't blame me, blame my hectic schedule. I don't have time for these
+          trivialities)
+        </p>
+      </div>
+    </div>
+    <!-- <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".post"),{
+		max: 2,
+		speed: 400,
+        glare: true,
+        "max-glare": .1,
+	});
+    </script> -->
+  </body>
+</html>
